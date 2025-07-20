@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url('imginicio/fondo.png') no-repeat center center fixed;
+  background-size: contain;
+  font-family: 'Montserrat', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 80px;
+  padding-right: 8vw;
+}
+
+.boton-votar {
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #23409a;
+  background: #fff;
+  border: 2px solid #d1d5db;
+  border-radius: 14px;
+  box-shadow: 2px 4px 0 #bfc6d1;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.boton-votar:hover {
+  background: #e6eaf3;
+  color: #1a2a5c;
+  box-shadow: 2px 6px 0 #a3acc2;
+}
+
+.zona-derecha {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  padding-right: 0;
+  transform: translateX(17vw);
+}
+
+.logo-img {
+  width: 340px;
+  max-width: 90vw;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.boton-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: url('imginicio/lilys2.png') no-repeat center center fixed !important;
+    background-size: contain !important;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .zona-derecha,
+  .mobile-landing,
+  .logo-mobile,
+  .boton-votar-mobile,
+  .lilys-mobile {
+    display: none !important;
+  }
+  .boton-mobile {
+    display: block !important;
+    position: absolute;
+    top: 25vh;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 9px 0;
+    width: 57vw;
+    max-width: 260px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: #23409a;
+    background: #fff;
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+    box-shadow: 2px 4px 0 #bfc6d1;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    z-index: 10;
+  }
+  .zona-derecha {
+    display: none !important;
+  }
+}
