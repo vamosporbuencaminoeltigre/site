@@ -10,7 +10,7 @@ function showVotarAlertaModal() {
       <div class="vam-modal-content" style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;padding:2em 2.5em;border-radius:12px;box-shadow:0 2px 16px rgba(0,0,0,0.2);z-index:9999;display:flex;flex-direction:column;align-items:center;max-width:90vw;">
         <div class="vam-close" style="align-self:flex-end;cursor:pointer;font-size:1.5em;color:#e53935;font-weight:bold;line-height:1;">&times;</div>
         <div style="font-size:2em;color:#e53935;margin-bottom:0.5em;">&#9888;</div>
-        <div style="font-size:1.2em;text-align:center;font-weight:500;">NI LO INTENTES PRESIONA SOLO VOTAR</div>
+        <div style="font-size:1.2em;text-align:center;font-weight:500;">NI LO INTENTES PRESIONA SOLO VOTAR AL FINAL DE LA PANTALLA</div>
       </div>
     `;
     document.body.appendChild(modal);
